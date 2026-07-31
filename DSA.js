@@ -1,25 +1,12 @@
-function largestEven(arr) {
-  let largest = null;
+function findSecondLargest(arr) {
+  let secondLargest = null;
 
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 === 0 && arr[i] > largest) {
+    if (secondLargest === null || arr[i] > secondLargest) {
       largest = arr[i];
     }
   }
-  return largest;
+  return secondLargest;
 }
 
-console.log(largestEven([2, 5, 8, 9, 12])); //12
-
-function largestEven(arr) {
-  let largest = null;
-
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 === 0 && arr[i] > largest) {
-      largest = arr[i];
-    }
-  }
-  return largest;
-}
-
-console.log(largestEven([7, 9, 11])); //null
+console.log(findSecondLargest([4, 10, 6, 14, 8])); //10
