@@ -1,65 +1,65 @@
- function findLargest(arr) {
-    let largest = 0;
+function findLargest(arr) {
+  let largest = 0;
 
-    for(let i = 0; i < arr.length; i++) {
-        if (arr[i] > largest) {
-            largest = arr[i];
-        }
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      largest = arr[i];
     }
+  }
 
-    return largest;
+  return largest;
 }
-console.log(findLargest([2,3,5,6,9])); //9
+console.log(findLargest([2, 3, 5, 6, 9])); //9
 
- function findSmallest(arr) {
-    let smallest = 0;
+function findSmallest(arr) {
+  let smallest = 0;
 
-    for(let i = 1; i < arr.length; i++) {
-        if (arr[i] < smallest) {
-            smallest = arr[i];
-        }
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < smallest) {
+      smallest = arr[i];
     }
+  }
 
-    return smallest;}
-    console.log(findLargest([2,3,5,6,9])); //2
-
- function findSum(arr) {
-    let sum = 0;
-
-    for(let i = 0; i < arr.length; i++){
-        sum = sum + arr[i];
-    }
-
-    return sum;
+  return smallest;
 }
+console.log(findLargest([2, 3, 5, 6, 9])); //2
 
-console.log(findSum([2,3,5,1])); //11
+function findSum(arr) {
+  let sum = 0;
 
-function countEven(arr){
-    let count = 0;
-    for (let i = 0; i < arr.length; i++) {
-        if(arr[i] % 2 === 0){
-            count++;
-        }
-    }
-    return count;
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+
+  return sum;
 }
 
-console.log(countEven([2,6,4,1,3,9,0])); //4
+console.log(findSum([2, 3, 5, 1])); //11
+
+function countEven(arr) {
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(countEven([2, 6, 4, 1, 3, 9, 0])); //4
 
 function findSecondLargest(arr) {
-    let largest = null;
-    let secondLargest = null; 
+  let largest = null;
+  let secondLargest = null;
 
-    for(let i = 0; i < arr.length; i++){
-    
+  for (let i = 0; i < arr.length; i++) {
     if (largest === null || arr[i] > argest) {
-        secondLargest = largest;
-        largest = arr[i];
-        }
-     else (arr[i] > secondLargest ) {
-        secondLargest = arr[i];
-    } }
-    return secondLargest;
+      secondLargest = largest;
+      largest = arr[i];
+    } else if (secondLargest === null || arr[i] > secondLargest) {
+      secondLargest = arr[i];
+    }
+  }
+  return secondLargest;
 }
-console.log(countEven([2,6,4,1,3,9,0])); //6
+console.log(findSecondLargest([2, 6, 4, 1, 3, 9, 0])); //6
