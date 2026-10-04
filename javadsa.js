@@ -1,4 +1,10 @@
 let x = 10;
 let y = 19;
 
-console.log(x + y);
+let sum = x + y;
+
+let product = x * y;
+
+let comparison = x !== y;
+
+console.log(comparison);
