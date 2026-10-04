@@ -5,6 +5,6 @@ let sum = x + y;
 
 let product = x * y;
 
-let comparison = x !== y;
+let comparison = x >= y;
 
 console.log(comparison);
