@@ -1,7 +1,7 @@
-let score = 40;
+let age = prompt("Enter your age"); 
 
-if(score < 60) {
-  console.log("Passed");  
+if (age <= 18) {
+  console.log("You are a Teenager")
 } else {
-  console.log("Failed");
+  console.log("You are an Adult")
 }
