@@ -1,7 +1,5 @@
-let age = prompt("Enter your age"); 
-
-if (age <= 18) {
-  console.log("You are a Teenager")
-} else {
-  console.log("You are an Adult")
+function greet(name) {
+ return `Hello, ${name}!`;
 }
+
+console.log(greet('Software is Life'));
